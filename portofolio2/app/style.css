@@ -1,0 +1,443 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto";
+  background-color: var(--coklat);
+}
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+:root {
+  --ijo: #19322e;
+  --coklat: #dfc296;
+  --putih: #ffffff;
+  --main-fonts: 'Fira Code';
+}
+header {
+  height: 100vh;
+  background-image: url("/img/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover, contain;
+}
+nav {
+  display: flex;
+  background-color: #19322e76;
+  width: 100%;
+  max-width: 1200%;
+  justify-content: space-evenly;
+  align-items: center;
+  position: sticky;
+  z-index: 9999;
+  top: 0;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;  
+  padding-block: 1.5rem 2rem;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--putih);
+  text-transform: uppercase;
+  padding-inline: 1rem;
+  padding-block: 1rem;
+  border-radius:30px ;
+  transition: all 0.4s ease-in-out;
+}
+li>a:hover {
+  background-color: var(--ijo);
+}
+.profile {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  max-width: 80%;
+  height: 80vh;
+  box-sizing: border-box;
+  padding-inline-start: 1.5rem;
+  margin-inline: auto;
+  margin-block: auto;
+}
+.identitas {
+  width: 30%;
+  margin-block: auto;
+  margin-inline: auto;
+}
+.prf {
+  width: 50%;
+  border-radius: 999px ;
+  border: 2px solid rgba(0, 0, 0, 0.541);
+  object-fit: contain;
+  flex: 1;
+  box-shadow: -8px -6px 5px 1px #dfc29669;
+  margin-block-end: 3rem;
+  margin-inline-start: 2rem;
+}
+figcaption {
+  color: var(--ijo);
+  text-transform: uppercase;
+  font-weight: 1000;
+  font-size: 2rem;
+}
+.icon  {
+  width: 38%;
+  background-color: #ffffff73;
+  margin-inline: auto ;
+  margin-block: auto;
+  border-radius: 30px;
+}
+.tombol {
+  display: block;
+  color: var(--ijo);
+}
+
+/* main */
+
+main {
+  /* width: 95%; */
+  /* max-width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  margin-inline: auto;
+  margin-block: auto;
+  /* margin-block-start: 2rem; */
+  font-family: var(--main-fonts);
+  flex-direction: column;
+}
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: var(--ijo);
+  color: var(--coklat);
+  text-align: center;
+
+}
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+.progress-bar {
+  height: 8px;
+  background: #04AA6D;
+  width: 0%;
+}
+#Tujuan {
+  margin-block-start: .5rem;
+  display: flex;
+  width: 100%;
+  /* max-width: 85%; */
+  background-color: var(--coklat);
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.tjn {
+  overflow: hidden;
+  width: 80%;
+  background-color: #ffffff99;
+  display: flex;
+  gap: 1.5rem;
+  box-shadow: 8px 6px 5px 1px #19322e82;
+  border: 3px solid transparent;
+  border-radius: 20px;
+  padding-inline: 1.5rem;
+  padding-block: 2rem;
+  margin-block: 2rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.gmbr00 {
+  width: 27%;
+  margin-inline-start: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 5px 3px 5px 1px rgba(0, 0, 0, 0.58);
+}
+.box-tujuan {
+  display: flex;
+  flex-direction: column;
+  color: #19322e;
+  gap: 2rem;
+  border: 2px solid black;
+  padding-inline: 2rem 2rem;
+  border-bottom-right-radius: 100px;
+  border-top-left-radius: 100px;
+  margin-inline-start: 1rem;
+  padding-block: 2rem 2rem;
+
+}
+
+h2 {
+  font-size: 2rem;
+  margin-block-start: .5rem;
+}
+p {
+  text-indent: 50px;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  text-align: start;
+}
+.content-des-fre {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-block-start: 5rem;
+  border-top: 3px solid #19322eb7;
+  padding-block-start: 2rem;
+  color: var(--ijo);
+  border-bottom: 3px solid #19322eb7;
+  padding-block-end: 5rem;
+}
+#Deskripsi {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+  margin-inline-start: 3rem;
+  margin-inline-end: 1.5rem;
+  border-radius: 25px;
+  padding: 25px;
+  box-shadow: -8px -6px 10px 1px rgba(0, 0, 0, 0.502),8px 6px 10px 1px rgba(0, 0, 0, 0.502);
+}
+#Deskripsi>p {
+  padding-block-start: 1.5rem;
+}
+#Frekuensi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  border: 3px solid black;
+  margin-inline-end: 3rem;
+  margin-inline-start: 1.5rem;
+  border-radius: 25px;
+  padding: 25px;
+  box-shadow: 8px 6px 10px 1px rgba(0, 0, 0, 0.502),-8px -6px 10px 1px rgba(0, 0, 0, 0.502);
+}
+#Frekuensi>p {
+  padding-block-start: 1.3rem;
+}
+#Icon {
+  background-color: var(--putih);
+  /* margin-block-start: 5rem; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+#Icon>a {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--ijo);
+  margin-block: 2.5rem;
+  border: 2px solid var(--ijo);
+  border-radius: 20px;
+  border-radius: none;
+  cursor: default;
+  font-size: .8rem;
+  font-weight: 600;
+  text-transform: lowercase;
+  gap: 1.5rem;
+  margin-inline: 1.5rem;
+  box-shadow: 5px 0 5px var(--ijo);
+}
+.ring {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline-end: 1.5rem;
+}
+.btn {
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  border: none;
+  border-radius: 10px;
+  padding-block: 1.5rem;  
+  padding-inline: 1.2rem;
+  font-size: 16px;
+  cursor: default;
+  background-color: #282A35;
+  color: white;
+  position: relative;
+  writing-mode: vertical-lr;
+  text-transform: uppercase;
+}
+
+.ribbon {
+  width: 60px;
+  font-size: 14px;
+  padding: 4px;
+  position: absolute;
+  right: 15px;
+  top: -12px;
+  text-align: center;
+  border-radius: 25px;
+  transform: rotate(-30deg);
+  background-color: #ff9800;
+  color: white;
+  writing-mode: horizontal-tb;
+}
+
+#Pengalaman {
+  margin-block: 2rem;
+  margin-inline: 1,5rem;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.562) ;
+  padding-block-end: 3rem;
+}
+#Pengalaman>h2 {
+  margin-block-end: 1rem;
+  color: var(--ijo);
+}
+#Pengalaman>p {
+  color: var(--ijo);
+}
+#Pengalaman>#write{
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  padding-block: 1.5rem;  
+  padding-inline: 1.2rem;
+  font-size: 1em;
+  cursor: default;
+  background-color: var(--ijo);
+  color: white;
+  margin-block-start: 2rem;
+}
+#slide {
+  margin-block-start: 2.5rem;
+  position: relative;
+  background-color: var(--coklat);
+  color: var(--ijo);
+  padding: 3rem;
+  /* width: 50%; */
+}
+#Gaya-visual {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+#Gaya-visual>h2 {
+  padding-block-end: 1rem;
+}
+#Teknik {
+  display: none;
+  padding: 80px;
+  text-align: center; 
+}
+#Teknik>h2 {
+  margin-block-start: 1rem;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 12px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  margin-block-start: 1.5rem;
+  background: #ddd;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+#Refleksi {
+  color: var(--ijo);
+  background-color: var(--putih);
+  width: 85%;
+  padding: 3rem;
+  border-radius: 50px;
+  margin-block: 2rem 2.5rem;
+}
+
+/* Footer */
+footer {
+  background-color: var(--ijo);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  color: var(--coklat);
+  padding-block: 2rem;
+}
+/* BTN scroll */
+#MyBtnUp {
+  /* display: none; */
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  background-color: #19322e5e;
+  color: var(--putih);
+  padding:1em;
+  z-index:99;
+  border-radius: 99px;
+  border: none;  
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  
+}
+#MyBtnUp:hover {
+  background-color: rgba(255, 255, 255, 0.244);
+  color: var(--ijo);
+}
